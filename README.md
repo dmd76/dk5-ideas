@@ -1,2 +1,2 @@
 # dk5-ideas
-DailyKos 5 Styling Ideas
+DailyKos 5 Style Ideas
