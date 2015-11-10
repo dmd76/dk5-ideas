@@ -34,7 +34,7 @@
 }
 
 .comment-author > span:nth-child(2):after {
-    content: "?";
+    content: "→"";
     font-size: 14px;
 }
 
