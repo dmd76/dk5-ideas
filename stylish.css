@@ -1,5 +1,5 @@
 /* import Open Sans Semi-Bold 600 */
-@import url('http://fonts.googleapis.com/css?family=Open+Sans:600');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:600');
 /* dotted line on left of comments to make nesting level clearer */
 .comment-section:before {
     content: '';
@@ -10,9 +10,10 @@
     top: 0px;
     left: -30px;
 }
-/* darker comment text */
-.comment-text > p {
+/* darker, slightly larger comment text, title */
+.comment-text > p, .comment-text > .comment-title {
     color: #101017;
+    font-size: 1.1em;
 }
 /* unbold parent comment author username */
 .parent-author {
