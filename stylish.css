@@ -18,7 +18,7 @@
     font-size: 1.1em;
 }
 
-/* unbold parent comment author username */
+/* unbolded parent comment author username */
 .parent-author {
     font-weight: normal !important;
 }
