@@ -34,7 +34,7 @@
 }
 
 .comment-author > span:nth-child(2):after {
-    content: "?";
+    content: '\2192';
     font-size: 14px;
 }
 
