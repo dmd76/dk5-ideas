@@ -8,7 +8,7 @@
     height: 100%;
     position: absolute;
     border-left: 1px dotted #ccc;
-    top: 0px;
+    top: 0;
     left: -30px;
 }
 
@@ -27,6 +27,17 @@
 .author-name {
     font-weight: 600;
 }
+
+/* add arrow between author and parent names */
+.comment-author > span:nth-child(2) {
+    font-size: 0;
+}
+
+.comment-author > span:nth-child(2):after {
+    content: "?";
+    font-size: 14px;
+}
+
 
 /* add space between comment timestamp and actions */
 .comment .meta .actions {
