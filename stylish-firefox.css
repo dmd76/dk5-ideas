@@ -65,7 +65,7 @@
     }
 
     .actions > .pull-left * {
-        font-size: 1.1em;
+        font-size: 1em !important;
     }
 
     /* increase font size, decrease font weight of post titles in right-hand bar on main page */
