@@ -1,0 +1,78 @@
+@-moz-document domain("dailykos.com") {
+    /* import Open Sans Semi-Bold 600 */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:600');
+
+    /* dotted line on left of comments to make nesting level clearer */
+    .comment-section:before {
+        content: '';
+        width: 0;
+        height: 100%;
+        position: absolute;
+        border-left: 1px dotted #ccc;
+        top: 0;
+        left: -30px;
+    }
+
+
+    /* darker comment text */
+    .comment-text > p, .comment-text > .comment-title {
+        color: #101017;
+        font-size: 1.1em;
+        margin: 0 0 1.1em;
+    }
+    .comment-text > ul > li, .comment-text > ol > li {
+        color: #101017;
+        font-size: 1.1em;
+    }
+
+    /* blockquotes */
+    .comment-section blockquote{
+        padding: 2em 2.5em;
+        margin: 0 0 1.5em;
+    }
+    .comment-section blockquote p:first-child {
+        margin-top: 0;
+    }
+    /* unbold parent comment author username */
+    .parent-author {
+        font-weight: normal !important;
+    }
+
+    /* semi-bold comment author username */
+    .author-name {
+        font-weight: 600;
+    }
+
+    /* add arrow between author and parent names */
+    .comment-author > span:nth-child(2) {
+        font-size: 0;
+    }
+
+    .comment-author > span:nth-child(2):after {
+        content: '\2192';
+        font-size: 14px;
+    }
+
+
+    /* add space between comment timestamp and actions */
+    .comment .meta .actions {
+        margin-left: .5em;
+    }
+
+    /* add space between each comment action */
+    .actions > * {
+        padding-right: 1.3em;
+    }
+
+    .actions > .pull-left * {
+        font-size: 1.1em;
+    }
+
+    /* increase font size, decrease font weight of post titles in right-hand bar on main page */
+    .more-stories-sidebar a.story-summary,
+    .explore-content a.store-summary {
+        font-weight: 600 !important;
+        font-size: 14px !important;
+    }
+
+}

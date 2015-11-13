@@ -12,13 +12,27 @@
     left: -30px;
 }
 
+
 /* darker comment text */
 .comment-text > p, .comment-text > .comment-title {
     color: #101017;
     font-size: 1.1em;
+    margin: 0 0 1.1em;
+}
+.comment-text > ul > li, .comment-text > ol > li {
+    color: #101017;
+    font-size: 1.1em;
 }
 
-/* unbolded parent comment author username */
+/* blockquotes */
+.comment-section blockquote{
+    padding: 2em 2.5em;
+    margin: 0 0 1.5em;
+}
+.comment-section blockquote p:first-child {
+    margin-top: 0;
+}
+/* unbold parent comment author username */
 .parent-author {
     font-weight: normal !important;
 }
@@ -38,14 +52,19 @@
     font-size: 14px;
 }
 
+
 /* add space between comment timestamp and actions */
 .comment .meta .actions {
-    margin-left: 5px;
+    margin-left: .5em;
 }
 
 /* add space between each comment action */
 .actions > * {
-    padding-right: 13px;
+    padding-right: 1.3em;
+}
+
+.actions > .pull-left * {
+    font-size: 1.1em;
 }
 
 /* increase font size, decrease font weight of post titles in right-hand bar on main page */
